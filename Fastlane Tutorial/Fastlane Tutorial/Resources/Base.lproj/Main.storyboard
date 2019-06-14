@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vvq-Sc-2sW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ZhR-lq-jLl">
+            <objects>
+                <viewController id="gX7-GB-kwY" customClass="MainViewController" customModule="Fastlane_Tutorial" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="84a-zP-mv7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qEm-Jb-N4T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.055823814989999998" green="0.66666668650000005" blue="0.14739223200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IPc-Qm-u35" firstAttribute="trailing" secondItem="qEm-Jb-N4T" secondAttribute="trailing" id="Csw-ep-iPd"/>
+                            <constraint firstItem="qEm-Jb-N4T" firstAttribute="leading" secondItem="IPc-Qm-u35" secondAttribute="leading" id="WMg-JG-CA5"/>
+                            <constraint firstItem="IPc-Qm-u35" firstAttribute="bottom" secondItem="qEm-Jb-N4T" secondAttribute="bottom" id="xUA-bT-uvZ"/>
+                            <constraint firstItem="qEm-Jb-N4T" firstAttribute="top" secondItem="IPc-Qm-u35" secondAttribute="top" id="xcU-ne-rWn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPc-Qm-u35"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="__PageName__Mainscreen"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home View Controller" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="8mo-gs-lPa"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="table" destination="qEm-Jb-N4T" id="hzm-LX-asy"/>
+                        <segue destination="WyX-rA-mPq" kind="show" identifier="DetailViewController" id="Jvn-Nv-6gv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItR-Cp-U4b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.7971014492755" y="118.52678571428571"/>
+        </scene>
+        <!--Animated View Controller-->
+        <scene sceneID="9Pv-ZS-nom">
+            <objects>
+                <viewController title="Animated View Controller" id="WyX-rA-mPq" customClass="DetailViewController" customModule="Fastlane_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tCk-09-e2M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAY-ba-FiK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animated_image.gif" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-9s-r3d">
+                                        <rect key="frame" x="57" y="259" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="N5B-oO-8td"/>
+                                            <constraint firstAttribute="width" constant="300" id="YGe-z0-eiu"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="__Detailscreen__imageView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PN2-9s-r3d" firstAttribute="centerX" secondItem="AAY-ba-FiK" secondAttribute="centerX" id="6oA-QN-Bmm"/>
+                                    <constraint firstItem="PN2-9s-r3d" firstAttribute="centerY" secondItem="AAY-ba-FiK" secondAttribute="centerY" id="WJW-Hg-FqJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.055823814989999998" green="0.66666668650000005" blue="0.14739223200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AAY-ba-FiK" firstAttribute="height" secondItem="kBN-F1-ifY" secondAttribute="height" id="1Wt-qs-O7V"/>
+                            <constraint firstItem="AAY-ba-FiK" firstAttribute="width" secondItem="kBN-F1-ifY" secondAttribute="width" id="PPV-Uw-I8I"/>
+                            <constraint firstItem="AAY-ba-FiK" firstAttribute="centerY" secondItem="kBN-F1-ifY" secondAttribute="centerY" id="ax0-Uy-lOq"/>
+                            <constraint firstItem="AAY-ba-FiK" firstAttribute="centerX" secondItem="kBN-F1-ifY" secondAttribute="centerX" id="jfm-iq-C1d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kBN-F1-ifY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="__PageName__Detailscreen"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="PN2-9s-r3d" id="g1L-By-Vlm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpQ-3j-k1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2290" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pt9-qR-AHg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vvq-Sc-2sW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Bar-N9-7VK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.055823814989999998" green="0.66666668650000005" blue="0.14739223200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gX7-GB-kwY" kind="relationship" relationship="rootViewController" id="Ql4-5w-1cz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNn-GG-5Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495.6521739130435" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="animated_image.gif" width="600" height="600"/>
+    </resources>
+</document>
