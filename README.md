@@ -22,6 +22,7 @@ To get started, download Xcode project. once the project is downloaded then navi
 ```
 cd /Users/zinuk/Downloads/Fastlane\ Tutos/Fastlane\ Tutorial 
 ```
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/Ternimal.png)
 Check Ruby version, I used Ruby 2.3.7:
 ```
 ruby -v
@@ -40,6 +41,8 @@ aleternatively Homebrew:
 ```
 brew cask install fastlane
 ```
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/install-fastlane.png)
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/installed-fastlane.png)
 
 ### Getting Started with fastlane
 Open the **Fastlane Tutorial**  project in Xcode to build, run and check it out and navigate from terminal if you are not done it yet
@@ -56,7 +59,8 @@ Mohammads-MBP:fastlane zinuk$ cd fastlane
 #and 
 Mohammads-MBP:fastlane zinuk$ bundle install
 ```
-
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/fastlane init.png)
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/after install.png)
 
 ### Taking Screenshots
 Open Gemfile and put these command
@@ -139,6 +143,7 @@ scheme("Fastlane Tutorial")
 ```
 
 Onemore thing to add SnapshotHelper.swift into UITest Target:
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/add snapshothelper.png)
 
 Run again to check required gems are installed successfully.
 ```
