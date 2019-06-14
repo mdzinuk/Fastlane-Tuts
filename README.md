@@ -59,8 +59,9 @@ Mohammads-MBP:fastlane zinuk$ cd fastlane
 #and 
 Mohammads-MBP:fastlane zinuk$ bundle install
 ```
-![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/fastlane init.png)
-![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/after install.png)
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/fastlane-init.png)
+
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/after-install.png)
 
 ### Taking Screenshots
 Open Gemfile and put these command
@@ -143,7 +144,7 @@ scheme("Fastlane Tutorial")
 ```
 
 Onemore thing to add SnapshotHelper.swift into UITest Target:
-![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/add snapshothelper.png)
+![Terminal command](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/add-snapshothelper.png)
 
 Run again to check required gems are installed successfully.
 ```
