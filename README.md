@@ -18,7 +18,7 @@ We will discuss about
 * Releasing to the App Store
 
 ### Installing Fastlane
-To get started, download Xcode project. once the project is downloaded then navigate to the prject directory from Terminal.
+To get started, download [Xcode project](https://github.com/mdzinuk/Fastlane-Tuts/tree/master/Fastlane%20Tutorial). Once the project is downloaded then navigate to the prject directory from Terminal.
 ```
 cd /Users/zinuk/Downloads/Fastlane\ Tutos/Fastlane\ Tutorial 
 ```
@@ -154,7 +154,12 @@ Now you can run:
 ```
 bundle exec fastlane ios screenshots
 ```
+
 If everything is okay then your browser will come up with screenshots under fastlane/screenshots directory!!!
 ### Releasing to the App Store
+
+## Example
+![UITest Demo](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/demo.gif)
+[Xcode final project](https://github.com/mdzinuk/Fastlane-Tuts/tree/master/Fastlane%20Tutorial%20final)
 
 Continue.....

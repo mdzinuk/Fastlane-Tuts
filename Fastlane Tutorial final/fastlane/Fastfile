@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+default_platform :ios
+
+platform :ios do
+  XCODE_VERSION = "10.2.1"
+  
+  before_all do
+    xcversion(version: XCODE_VERSION)
+    FastlaneCore::UI.important "Started building in #{XCODE_VERSION}."
+  end
+  
+  desc "Take screenshots"
+  lane :screenshots do
+    capture_screenshots
+    frame_screenshots(white: true)
+  end
+  
+  desc "Uploads the app to the Testflight"
+  lane :betaTesting do
+    #will update later
+  end
+  
+  desc "Subbmit app for Apple review."
+  lane :submitApp do
+    #will update later
+  end
+  
+  desc "Release the app to the appstore"
+  lane :releaseApp do
+    # Will update later
+  end
+  
+  after_all do |lane|
+    FastlaneCore::UI.success "Success in #{lane}"
+  end
+
+  error do |lane, exception|
+    FastlaneCore::UI.error "#{exception.message} in #{lane}"
+  end
+end
+
