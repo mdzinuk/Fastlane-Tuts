@@ -159,7 +159,12 @@ If everything is okay then your browser will come up with screenshots under fast
 ### Releasing to the App Store
 
 ## Example
-![UITest Demo](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/demo.gif)
 [Xcode final project](https://github.com/mdzinuk/Fastlane-Tuts/tree/master/Fastlane%20Tutorial%20final)
+
+```
+-----
+```
+![UITest Demo](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/demo.gif)
+
 
 Continue.....
