@@ -154,13 +154,14 @@ Now you can run:
 ```
 bundle exec fastlane ios screenshots
 ```
-See the magic now:
-| Directory just has created |  HTML just created now | 
-|----------|---------|
-| ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screnshot_directory.png) |
-![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screenshot_html.png) |
-
 If everything is okay then your browser will come up with screenshots under fastlane/screenshots directory!!!
+
+| Directory just has created | HTML just created now |
+|----------|---------|
+| ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screnshot_directory.png)         | ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screenshot_html.png)        |
+
+See the magic now:
+
 ### Releasing to the App Store
 
 ## Example
