@@ -1,6 +1,25 @@
-app_identifier("--Company--.Fastlane-Tutorial") # The bundle identifier of your app
-# apple_id("[[APPLE_ID]]") # Your Apple email address
+
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
+
+# Replace APPLE_ID, APP_IDENTIFIER, APPLE_DEVELOPER_TEAM_ID and ITUNES_CONNECT_TEAM_ID with valid information
+
+APPLE_ID = "myEmail@email.com"
+APP_IDENTIFIER = "--Company--.Fastlane-Tutorial"
+APPLE_DEVELOPER_TEAM_ID = "BED89****"
+ITUNES_CONNECT_TEAM_ID = "ITUNES****"
+
+APP_IDENTIFIER = "--Company--.Fastlane-Tutorial"
+
+# The bundle identifier of your app
+app_identifier("#{APP_IDENTIFIER}")
+
+# Your Apple email address
+apple_id("#{APPLE_ID}")
+
+# Developer Portal Team ID
+team_id("#{APPLE_DEVELOPER_TEAM_ID}")
+
+# iTunes Connect Team ID
+itc_team_id("#{ITUNES_CONNECT_TEAM_ID}")
 
 
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
