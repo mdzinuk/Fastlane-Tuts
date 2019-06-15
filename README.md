@@ -148,7 +148,7 @@ Onemore thing to add SnapshotHelper.swift into UITest Target:
 
 Run again to check required gems are installed successfully.
 ```
-Mohammads-MBP:fastlane zinuk$ bundle instal
+Mohammads-MBP:fastlane zinuk$ bundle install
 ```
 Now you can run:
 ```
@@ -156,11 +156,13 @@ bundle exec fastlane ios screenshots
 ```
 If everything is okay then your browser will come up with screenshots under fastlane/screenshots directory!!!
 
+See the magic now:
+
 | Directory just has created | HTML just created now |
 |----------|---------|
 | ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screnshot_directory.png)         | ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screenshot_html.png)        |
 
-See the magic now:
+
 
 ### Releasing to the App Store
 
