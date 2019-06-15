@@ -155,11 +155,8 @@ Now you can run:
 bundle exec fastlane ios screenshots
 ```
 See the magic now:
-| Unsafe Area portrait | Unsafe Area Landscape left| Unsafe Area Landscape right|
-|----------|---------|---------|
-| ![Unsafe portrait](https://github.com/mdzinuk/SafeArea/blob/master/Resources/unsafe-uiview-portrait.png)         | ![Unsafe landscape left](https://github.com/mdzinuk/SafeArea/blob/master/Resources/unsafe-uiview-landscape-left.png)        |  ![Unsafe landscape right](https://github.com/mdzinuk/SafeArea/blob/master/Resources/unsafe-uiview-landscape-right.png)       |
-
 | Directory just has created |  HTML just created now | 
+|----------|---------|
 | ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screnshot_directory.png) |
 ![In your Fastlane directory](https://github.com/mdzinuk/Fastlane-Tuts/blob/master/Resources/screenshot_html.png) |
 
